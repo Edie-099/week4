@@ -1,0 +1,135 @@
+.footer-color {
+  background-color: $primary;
+  color: #FFFFFF;
+}
+
+.footer {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include max-lg {
+      padding: 0 36px;
+  }
+
+  @include max-md {
+      padding: 0 12px;
+  }
+
+  &-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px white;
+      padding-bottom: 24px;
+  }
+
+  &-nav-list {
+      display: flex;
+      margin-top: 48px;
+      margin-bottom: 12px;
+  }
+
+  &-nav-item {
+      padding: 12px 24px;
+  }
+
+  .pl-o {
+      padding-left: 0;
+  }
+
+  .pr-0 {
+      padding-right: 0;
+  }
+
+  @include max-md {
+      .display-md-none {
+          display: none;
+      }
+  }
+
+  &-contact-item {
+      font-size: 36px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+
+      @include max-md {
+          font-size: 16px;
+      }
+
+      &-icon {
+          font-size: 36px;
+          margin-right: 20px;
+
+          @include max-md {
+              font-size: 16px;
+          }
+      }
+  }
+
+  .mt-0 {
+      margin-top: 0;
+  }
+
+  &-social-list {
+      display: flex;
+      margin-top: 48px;
+      gap: 32px;
+
+      @include max-lg {
+          gap: 16px;
+      }
+
+      @include max-md {
+          margin-top: 24px;
+          gap: 8px;
+      }
+  }
+
+  &-social-list-item {
+      img {
+          width: 48px;
+          transition: 0.2s;
+      }
+
+      img:hover {
+          filter: drop-shadow(5px 5px 2px #2e1a1a);
+      }
+
+      @include max-lg {
+          width: 40px;
+      }
+
+      @include max-md {
+          width: 24px;
+      }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  @include max-md {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  &-list {
+      display: flex;
+
+      @include max-md {
+          flex-direction: column;
+      }
+  }
+
+  &-itme {
+      font-size: 14px;
+      padding: 12px 24px;
+
+      @include max-md {
+          padding: 8px 0;
+      }
+  }
+}

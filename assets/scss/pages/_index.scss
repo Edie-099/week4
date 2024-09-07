@@ -1,0 +1,368 @@
+.banner {
+  color: $secondary;
+  background-image: url("../images/home-header.png");
+  background-size: cover;
+  height: calc(100vh - 80px); // 80px : nav 高度
+
+  @include max-lg {
+      background-image: url("../images/home-header-sm.png");
+  }
+
+  &-item {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      color: $tertiary;
+
+      @include max-md {
+          padding: 0 12px;
+      }
+  }
+
+  &-title {
+      font-size: 64px;
+      font-weight: 700;
+  }
+
+  &-subtitle {
+      font-size: 36px;
+  }
+
+  &-link {
+      font-size: 20px;
+      color: #FFFFFF;
+      background-color: $primary;
+      padding: 6px 12px;
+  }
+
+  @include max-md {
+      &-title {
+          font-size: 24px;
+      }
+
+      &-subtitle {
+          font-size: 16px;
+      }
+  }
+}
+
+.card-a-color {
+  background-color: $secondary;
+}
+
+.card-a {
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+      color: $tertiary;
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 80px;
+      padding-bottom: 24px;
+
+      @include max-md {
+          font-size: 24px;
+          padding-top: 40px;
+      }
+  }
+
+  &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding-bottom: 80px;
+
+      @include max-md {
+          padding-right: 12px;
+          padding-left: 12px;
+      }
+
+  }
+
+  &-itme {
+      width: calc(25% - 18px); // 18px : 容器寬度的 25% 是 324px，設計稿的卡片寬度是 306px，故 324 - 306 = 18
+
+      @include max-lg {
+          width: calc(50% - 12px);
+      }
+
+      @include max-md {
+          width: 100%;
+      }
+  }
+
+  &-item-desc {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+          width: 100px;
+          margin-bottom: 16px;
+
+          @include max-md {
+              margin-bottom: 24px;
+          }
+      }
+
+      h4 {
+          color: $tertiary;
+          font-size: 24px;
+          font-weight: 700;
+          margin-bottom: 8px;
+      }
+
+  }
+}
+
+.card-b {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+      color: $tertiary;
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 80px;
+      padding-bottom: 48px;
+
+      @include max-md {
+          font-size: 24px;
+      }
+  }
+
+  &-list {
+      display: flex;
+      gap: 24px;
+      padding-bottom: 80px;
+
+      @include max-lg {
+          flex-direction: column;
+      }
+  }
+
+  &-item {
+      display: flex;
+      flex-direction: column;
+
+      img {
+          width: 416px;
+          margin-bottom: 8px;
+
+          @include max-lg {
+              max-width: 336px;
+          }
+
+          @include max-md {
+              max-width: 348px;
+          }
+      }
+
+      &-title {
+          color: $primary;
+          font-size: 48px;
+          font-weight: 900;
+          font-style: italic;
+          text-align: center;
+      }
+  }
+
+}
+
+.card-c-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  background-size: cover;
+
+  @include max-lg {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+  }
+
+  @include max-md {
+      background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  }
+}
+
+.card-c {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+      color: #FFFFFF;
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 80px;
+      padding-bottom: 48px;
+
+      @include max-md {
+          font-size: 24px;
+      }
+  }
+
+  img {
+      width: 648px;
+      background-position: center;
+
+      @include max-lg {
+          max-width: 696px;
+      }
+
+      @include max-md {
+          max-width: 348px;
+      }
+  }
+
+  &-list {
+      display: flex;
+      padding-bottom: 80px;
+
+      @include max-lg {
+          flex-direction: column;
+          gap: 24px;
+      }
+  }
+
+  &-item {
+      display: flex;
+      flex-direction: column;
+      background-color: #FFFFFF;
+      color: $primary;
+      font-size: 48px;
+      font-weight: 900;
+      font-style: italic;
+      text-align: center;
+  }
+
+}
+
+.card-d {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+      color: $tertiary;
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 80px;
+      padding-bottom: 48px;
+  }
+
+  &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 80px;
+
+      @include max-md {
+          padding: 0 12px;
+      }
+  }
+
+  &-item {
+      display: flex;
+      flex-direction: column;
+      width: calc(25% - 18px);
+      box-shadow: 0 2px 6px #00000029;
+      border-radius: 4px;
+
+      @include max-lg {
+          width: calc(50% - 12px);
+      }
+
+      @include max-md {
+          width: 100%;
+      }
+
+  }
+
+  &-item-desc {
+      padding: 16px;
+      margin-bottom: 72px;
+  }
+
+  &-item-title {
+      font-weight: 500;
+      margin-bottom: 8px;
+  }
+
+  &-item-date {
+      font-size: 14px;
+      color: #707070;
+      margin-top: auto;
+      padding: 16px;
+  }
+}
+
+.contact {
+  background-color: $secondary;
+
+  &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 636px;
+      margin: 0 auto;
+
+      @include max-md {
+          padding: 0 12px;
+      }
+  }
+  
+  h3 {
+      font-size: 48px;
+      font-weight: 700;
+      color: $tertiary;
+      margin-top: 80px;
+      margin-bottom: 48px;
+
+      @include max-md {
+          font-size: 24px;
+      }
+  }
+
+  p {
+      font-size: 20px;
+      margin-bottom: 24px;
+
+      @include max-lg {
+          font-size: 16px;
+      }
+  }
+
+  &-form {
+      width: 100%;
+  }
+
+  &-form-input {
+      width: 100%;
+      background-color: $secondary;
+      border: solid 1px black;
+      padding: 6px 12px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+  }
+
+  &-checkbox {
+      display: flex;
+      align-items: flex-start;
+  }
+
+  &-btn-desc {
+      display: block;
+      background-color: $primary;
+      color: #FFFFFF;
+      font-weight: 700;
+      margin: auto;
+      margin-top: 48px;
+      margin-bottom: 80px;
+      padding: 16px 176px;
+
+      @include max-md {
+          padding: 16px 142px;
+      }
+  }
+
+}

@@ -1,0 +1,13 @@
+// lab 992px
+@mixin max-lg {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+// phone 768px
+@mixin max-md {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}

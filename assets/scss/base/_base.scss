@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+// *,*:before,*:after{
+//     outline: solid 1px;
+// }
+
+body {
+    font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #2e1a1a;
+  }
